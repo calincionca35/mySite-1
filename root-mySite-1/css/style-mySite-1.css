@@ -1,0 +1,542 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    /* margin: 0; */
+    padding: 0px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ***************************** START PAGE STYLING *********************** */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8E8E8; /* 7.22 contrast ratio @ mobile */
+    color: #0F4C81; /* 2020 PANTONE 19-4052 Classic Blue */
+    font-family: Lato, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 360px;
+}
+
+/* Flex Elements */
+body, wrapper, header, .logo, .searchBar, #mainMenu, .mainLinks, main, #cardsWrapper, .card, #toTop, footer, .hamburger, .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Column Flex */
+#wrapper, .mainLinks, #toTop, main, #cardsWrapper, .card, .hamburger {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #BEBEBE; /* 4.76 contrast @ mobile */
+}
+
+/*
+.bkgImg {
+    background-image: url(../images/IMG_0761.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    background-attachment: fixed;
+    opacity: 1;
+}
+*/
+
+/* HEADER */
+header {
+    height: 60px;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+/* LOGO */
+.logo {
+    background-color: #404040;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 45px;
+    margin: 10px;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+.logo > a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 10px;
+    color: white;
+}
+
+/*Search Bar*/
+.searchBar {
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+label {
+    display: none;
+}
+
+input[name="search"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1.2px solid #000;
+    caret-color: #000;
+    height: 25px;
+    width: 165px;
+    -webkit-transition: width .35s;
+    transition: width .35s;
+}
+
+input[name="search"]:focus{
+    width: 175px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+.srcBtn {
+    background-color: transparent;
+    border: none;
+    margin-left: -15px;
+}
+
+/* MAIN NAV */
+#mainMenu {
+    background-color: #606060;
+    width: 360px;
+    position: fixed;
+    top: 62px;
+    bottom: 129px;
+    display: none;
+    padding-top: 50vh; /*424px; */
+    height: 100vh;
+}
+
+.mainLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.mainLinks li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mainLinks a {
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.home {
+    margin-left: 10%;
+}
+
+.about {
+    margin-left: 25%;
+}
+
+.projects {
+    margin-left: 40%;
+}
+
+.contact { 
+    margin-left: 60%;
+}
+
+/* MAIN */
+main {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 60px 0 127px;
+  
+}
+
+h1 {
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.title {
+     margin: 0 auto;
+     font-size: 16px;
+}
+
+p {
+    margin: 10px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+main > ul {
+    margin: 10px auto;
+    list-style: square;
+}
+
+main > ul > li {
+    margin: 5px 25px;
+}
+
+/* CARDS */
+#cardsWrapper {
+    margin: 10px 0 0 0;
+}
+
+.card {
+/*    border: 1px solid #000;*/
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(209,207,209,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(209,207,209,0.5);
+}
+
+.card > h2 {
+    font-size: 20px;
+    margin: 8px 0 0 0;
+}
+
+.card > a {
+    -webkit-text-decoration-color: #00e;
+    text-decoration-color: #00e;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.card > p {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+
+/* To Top */
+#toTop {
+    position: fixed;
+    bottom: 135px;
+    left: 10px;
+    background-color: #BEBEBE;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+/* FOOTER */
+footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.hamburger {
+    height: 32px;
+    width: 32px;
+    margin: 0 15px 0 28px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 2px 0 0 0;
+    font-weight: 700;
+}
+
+.social {
+/*    background-color: yellow;*/
+    width: 230px;
+}
+
+.social > li {
+    margin: 0 8px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.copyRight {
+    margin: 0 auto 8px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 375px) {
+    #wrapper {
+        width: 375px;
+    }
+    #mainMenu {
+        width: 375px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    #wrapper {
+        width: 425px;
+    }
+    #mainMenu {
+        width: 425px;
+    }
+    .social {
+    width: 350px;
+    }
+}
+
+/* Tablet Size */
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        width: 768px;
+    }
+    .hamburger {
+        display: none;
+    }
+    #mainMenu {
+        background-color: #d3d3d3;
+/*        background-color: white;*/
+        z-index: 0;
+        height: 60px;
+        position: static;
+        top: 0;
+        display: block;
+        padding: 0;
+    }
+    .mainLinks {
+        height: 60px;
+        padding: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .mainLinks li {
+        margin: 0;
+}
+    .mainLinks a {
+        text-decoration: underline;
+        -webkit-text-decoration-color: #00e;
+        text-decoration-color: #00e;
+        font-weight: 500;
+        padding: 8px 10px;
+        color: black;
+    }
+
+    .mainLinks a:active {
+        color: #e00;
+    }
+    
+    .searchBar {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        padding: 0 30px 0 0;
+    }
+
+    input[name="search"]:focus{
+        width: 165px;
+    }
+    #cardsWrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #card3 {
+        display: none;
+    }
+    #toTop {
+/*
+        position: fixed;
+        bottom: 135px;
+*/
+        right: 10px;
+/*
+        background-color: #BEBEBE;
+        padding: 4px;
+        border-radius: 8px;
+*/
+    }
+    .social {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
+    .copyRight {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    } 
+}
+
+/* Laptop Size */
+@media only screen and (min-width: 1024px) {
+    #wrapper {
+        width: 1024px;
+    }
+    header, footer {
+    background-color: #E8E8E8; /* 7.22 contrast @ laptop */
+    }
+    body {
+    background-color: #F8F8F8; /* 8.33 contrast ratio @ laptop */
+    }
+    .mainLinks {
+        margin-left: 375px;
+    }
+    .mainLinks a:hover {
+        color: #00e;
+        font-weight: 500;
+        border-radius: 10px;
+        background-color: #c0c0c0;
+    }
+    .srcBtn:hover {
+        cursor: pointer;
+        color: green;
+    }
+    #card3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .card > a:hover {
+        color: #00e;
+        font-weight: 500;
+    }
+    #toTop:hover {
+        cursor: pointer;
+        background-color:#0c0;
+        color: #fff;
+        
+    }
+    .fa-github:hover {
+        color:#040204;
+    }
+    .fa-linkedin:hover {
+        color:#04669A;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    #wrapper {
+        width: 1440px;
+    }
+    .mainLinks {
+        margin-left: 375px;
+    }
+
+}
