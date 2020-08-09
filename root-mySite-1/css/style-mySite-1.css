@@ -177,12 +177,13 @@ input[name="search"]:focus{
 
 /* MAIN NAV */
 #mainMenu {
-    width: 360px;
+    background-color: #404040;
+    width: 100vw;
     position: fixed;
-    top: 62px;
+    top: 60px;
     bottom: 129px;
     display: none;
-    padding-top: 50vh; /*424px; */
+    padding-top: 100px;
     height: 100vh;
 }
 
@@ -214,7 +215,7 @@ input[name="search"]:focus{
     margin-left: 25%;
 }
 
-.projects {
+.portfolio {
     margin-left: 40%;
 }
 
@@ -392,7 +393,7 @@ h3 {
         width: 360px;
     }
 }
-/* Tablet Size */
+/* TABLET SIZE */
 @media only screen and (min-width: 768px) {
     #wrapper {
         width: 768px;
@@ -401,7 +402,7 @@ h3 {
         display: none;
     }
     #mainMenu {
-/*        background-color: #d3d3d3;*/
+        background-color: #BEBEBE;
 /*        background-color: white;*/
         z-index: 0;
         height: 60px;
