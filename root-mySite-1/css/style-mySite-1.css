@@ -106,7 +106,6 @@ header {
 
 /* LOGO */
 .logo {
-/*    background-color: #404040;*/
     border-radius: 10px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -171,7 +170,7 @@ input[name="search"]:focus{
 .srcBtn {
     background-color: transparent;
     border: none;
-    margin-left: -15px;
+    margin: 0 0 3px -15px;
     padding: 4px;
 }
 
@@ -266,7 +265,6 @@ main > ul > li {
 }
 
 .card {
-/*    border: 1px solid #000;*/
     border-radius: 10px;
     padding: 10px;
     margin: 15px;
@@ -340,7 +338,6 @@ footer {
 }
 
 .social {
-/*    background-color: yellow;*/
     width: 230px;
 }
 
@@ -360,7 +357,7 @@ footer {
 
 }
 
-/* PROJECTS PAGE */
+/* PORTFOLIO PAGE */
 h3 {
     font-weight: 600;
     margin: 10px 0 0;
@@ -368,23 +365,17 @@ h3 {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 375px) {
-    #wrapper {
-        width: 375px;
-    }
-    #mainMenu {
+    #wrapper, #mainMenu {
         width: 375px;
     }
 }
 
 @media only screen and (min-width: 425px) {
-    #wrapper {
-        width: 425px;
-    }
-    #mainMenu {
+    #wrapper, #mainMenu {
         width: 425px;
     }
     .social {
-    width: 350px;
+        width: 350px;
     }
 }
 
@@ -393,6 +384,7 @@ h3 {
         width: 360px;
     }
 }
+
 /* TABLET SIZE */
 @media only screen and (min-width: 768px) {
     #wrapper {
@@ -403,7 +395,6 @@ h3 {
     }
     #mainMenu {
         background-color: #BEBEBE;
-/*        background-color: white;*/
         z-index: 0;
         height: 60px;
         position: static;
@@ -428,20 +419,16 @@ h3 {
 
     .mainLinks li {
         margin: 0;
-}
+    }
     .mainLinks a {
-        text-decoration: underline;
-        -webkit-text-decoration-color: #00e;
-        text-decoration-color: #00e;
         font-weight: 500;
         padding: 8px 10px;
         color: black;
-        font-size: 16px;
-}
+        font-size: 14px;        
+    }
     .mainLinks a:active {
         color: #e00;
     }
-    
     .searchBar {
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -462,16 +449,7 @@ h3 {
         display: none;
     }
     #toTop {
-/*
-        position: fixed;
-        bottom: 135px;
-*/
         right: 10px;
-/*
-        background-color: #BEBEBE;
-        padding: 4px;
-        border-radius: 8px;
-*/
     }
     .social {
         -webkit-box-ordinal-group: 3;
@@ -492,19 +470,21 @@ h3 {
     } 
 }
 
-/* Laptop Size */
+/* LAPTOP SIZE */
 @media only screen and (min-width: 1024px) {
     body {
-        background-color: white; 
-        width: 960px;
+        background-color: #DCDCDC;
+        width: 1024px;
         margin: 0 auto;
     }
     #wrapper {
         background-color: #F8F8F8; /* 8.33 contrast ratio @ laptop */
+        width: 1024px;
     }
     header, footer {
         background-color: #E8E8E8; /* 7.22 contrast @ laptop */
-        width: 960px;
+        width: 1024px;
+        position: static;
     }
     #mainMenu {
         background-color: #E8E8E8; /* 7.22 contrast @ laptop */
@@ -512,11 +492,17 @@ h3 {
     .mainLinks {
         margin-left: 375px;
     }
+    .mainLinks a {
+        text-decoration: underline;
+        -webkit-text-decoration-color: #00e;
+        text-decoration-color: #00e;
+        font-size: 16px;
+    }
     .mainLinks a:hover {
         color: #00e;
         font-weight: 500;
-        border-radius: 10px;
-        background-color: #c0c0c0;
+/*        border-radius: 10px;*/
+/*        background-color: #c0c0c0;*/
     }
     .srcBtn:hover {
         cursor: pointer;
@@ -524,6 +510,9 @@ h3 {
         background-color: #D3D3D3;
         border-radius: 5px;
 
+    }
+    main {
+        margin: 0;
     }
     #card3 {
         display: -webkit-box;
@@ -556,5 +545,4 @@ h3 {
     .mainLinks {
         margin-left: 375px;
     }
-
 }
