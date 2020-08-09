@@ -175,6 +175,7 @@ input[name="search"]:focus{
     background-color: transparent;
     border: none;
     margin-left: -15px;
+    padding: 4px;
 }
 
 /* MAIN NAV */
@@ -240,8 +241,9 @@ h1 {
 }
 
 .title {
-     margin: 0 auto;
-     font-size: 16px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-style: italic;
 }
 
 p {
@@ -362,6 +364,11 @@ footer {
 
 }
 
+/* PROJECTS PAGE */
+h3 {
+    font-weight: 600;
+    margin: 10px 0 0;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 375px) {
@@ -507,6 +514,9 @@ footer {
     .srcBtn:hover {
         cursor: pointer;
         color: green;
+        background-color: #D3D3D3;
+        border-radius: 5px;
+
     }
     #card3 {
         display: -webkit-box;
