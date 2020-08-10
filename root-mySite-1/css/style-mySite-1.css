@@ -261,10 +261,6 @@ main > ul > li {
 }
 
 /* CARDS */
-#cardsWrapper {
-    margin: 10px 0 0 0;
-}
-
 .card {
     border-radius: 10px;
     padding: 10px;
@@ -277,9 +273,30 @@ main > ul > li {
     box-shadow: 10px 10px 5px 0px rgba(209,207,209,0.5);
 }
 
+.card > a:first-child {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
 .card > h2 {
-    font-size: 20px;
-    margin: 8px 0 0 0;
+    font-size: 16px;
+    margin: 8px 0 4px 0;
+    font-weight: 700;
+}
+
+.card > ul {
+    -ms-flex-item-align: start;
+    align-self: center;
+    list-style-type: square;
+    margin-left: 40px;
+    
+}
+
+.card > ul > li {
+    padding: 3px;
 }
 
 .card > a {
@@ -287,13 +304,8 @@ main > ul > li {
     text-decoration-color: #00e;
     -ms-flex-item-align: end;
     align-self: flex-end;
+    padding-right: 4px;
 }
-
-.card > p {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-}
-
 
 /* To Top */
 #toTop {
@@ -494,14 +506,14 @@ h3 {
         margin-left: 375px;
     }
     .mainLinks a {
-        text-decoration: underline;
-        -webkit-text-decoration-color: #00e;
-        text-decoration-color: #00e;
         font-size: 16px;
     }
     .mainLinks a:hover {
         color: #00e;
         font-weight: 500;
+        text-decoration: underline;
+        -webkit-text-decoration-color: #00e;
+        text-decoration-color: #00e;
 /*        border-radius: 10px;*/
 /*        background-color: #c0c0c0;*/
     }
