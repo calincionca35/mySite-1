@@ -139,6 +139,7 @@ input[name="search"]:focus{
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    list-style: none;
 }
 
 .mainLinks li {
@@ -307,6 +308,7 @@ footer {
 }
 
 .social {
+    list-style: none;
     height: 29px;
     width: 100%;
     -webkit-box-ordinal-group: 4;
